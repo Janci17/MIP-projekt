@@ -1,0 +1,60 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[shorthands=off,english,slovak]{babel}
+\usepackage{lmodern}
+\usepackage[a4paper,margin=2.5cm]{geometry}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{hyperref}
+
+\setlength{\parskip}{0.6em}
+\setlength{\parindent}{0pt}
+
+\begin{document}
+
+\begin{center}
+  {\LARGE\bfseries Zameranie projektu}\\[0.6em]
+  {\large Ivan Kačinec | Ján Katkovčin | Šimon Jurašek}\\[0.3em]
+\end{center}
+
+
+\section*{VV-A1-03 Názov projektu}
+
+Asistenčné rozpoznávanie neoznačeného ovocia, zeleniny a~pečiva
+pri samoobslužnej a~bežnej pokladni
+
+\textbf{Project title in English:}
+Assistive Recognition of Unlabelled Fruit, Vegetables and Bakery
+Products at Self-Service and Staffed Checkouts
+
+\section*{VV-A1-04 Akronym projektu}
+
+POKLAD -- Pokladničný Asistent Detekcie
+
+\textbf{Acronym of the project:} POKLAD
+
+\section*{VV-A1-09 Anotácia}
+
+Cieľom projektu je vyvinúť a~overiť asistenčný systém na rozpoznávanie neoznačeného ovocia, zeleniny a~pečiva pri samoobslužnej aj bežnej pokladni. Kamera bude snímať vyznačenú plochu váhy. Systém rozpozná vybrané druhy produktov a~prepojí ich s~databázou položiek, PLU kódov, cien a~spôsobov predaja. Údaj z~váhy pomôže spresniť rozpoznanie a~určiť účtované množstvo podľa spôsobu predaja.
+
+Projekt overí presnosť rozpoznávania pri rôznom osvetlení, uhloch pohľadu, počte kusov, čiastočnom zakrytí a~použití priesvitného vrecka. Porovná klasifikačný a~detekčný model. Zároveň vyhodnotí, či kombinácia obrazu a~údaja z~váhy zlepšuje výsledky. Systém bude rozlišovať prázdnu váhu, jeden produkt, viac produktov, priesvitné vrecko a~neznámy produkt. Pri viacerých druhoch naraz vyžiada oddelenie produktov, aby bolo možné správne priradiť hmotnosť. Ak produkt nebude dobre viditeľný, poradí, ako ho posunúť. Pri nízkej istote ponúkne najviac tri možné položky alebo vyžiada manuálny výber.
+
+Položku vždy potvrdí alebo opraví pokladník či zákazník podľa typu pokladne. Systém nebude tovar automaticky účtovať. Ak sa zvolená položka nebude zhodovať s~obrazom, zobrazí neutrálne upozornenie. Projekt overí, či spojenie kamery, váhy a~ľudského potvrdenia uľahčí výber správnej položky. Vyhodnotí aj presnosť návrhov, prípady manuálneho výberu a~čas potrebný na obsluhu.
+
+Očakávaným prínosom je rýchlejší a~presnejší výber položky bez hľadania v~zoznamoch a~zadávania PLU kódov, menej zámen podobných druhov a~menej zásahov personálu pri samoobslužných pokladniach. Maloobchodom systém pomôže znížiť straty z~nesprávne účtovaného tovaru a~skrátiť rady, pričom využije existujúcu váhu a~databázu položiek bez výmeny pokladníc.
+
+\textbf{Annotation in English:}
+
+\begin{otherlanguage}{english}
+The project aims to develop and validate an assistive system for recognising unlabelled fruit, vegetables and bakery products at both self-service and staffed checkouts. A camera will capture a marked area of the scale. The system will recognise selected product types and link them to a database of items, PLU codes, prices and sales methods. The scale reading will help refine recognition and determine the quantity to be charged according to the sales method.
+
+The project will evaluate recognition accuracy under varying lighting, viewing angles, numbers of pieces, partial occlusion and the use of a transparent bag. It will compare classification and detection models and assess whether combining image and scale data improves the results. The system will distinguish between an empty scale, a single product, multiple products, a bag and an unknown product. When several product types are placed at once, it will ask for them to be separated so that weight can be assigned correctly. If a product is not clearly visible, it will advise how to reposition it. At low confidence, it will offer at most three candidate items or request manual selection.
+
+The cashier or the customer, depending on the checkout type, will always confirm or correct the item. The system will not charge goods automatically. If the selected item does not match the image, it will display a neutral warning. The project will verify whether combining camera, scale and human confirmation makes it easier to select the correct item. It will also evaluate suggestion accuracy, manual selection cases and operating time.
+
+The expected benefit is faster and more accurate item selection without searching through lists or entering PLU codes, fewer mix-ups between similar varieties and fewer staff interventions at self-service checkouts. For retailers, the system will help reduce losses from incorrectly charged goods and shorten queues, using the existing scale and item database without replacing checkouts.
+\end{otherlanguage}
+
+\end{document}

@@ -1,4 +1,4 @@
-\documentclass[10pt,a4paper]{article}
+\documentclass[10pttwocolumn,twoside,slovak,a4paper]{article}
 
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
@@ -8,6 +8,7 @@
 \usepackage{graphicx}
 \usepackage{url}
 \usepackage{hyperref}
+\usepackage{subcaption}
 
 \setlength{\parskip}{0.6em}
 \setlength{\parindent}{0pt}
@@ -56,16 +57,17 @@ The cashier or the customer, depending on the checkout type, will always confirm
 
 The expected benefit is faster and more accurate item selection without searching through lists or entering PLU codes, fewer mix-ups between similar varieties and fewer staff interventions at self-service checkouts. For retailers, the system will help reduce losses from incorrectly charged goods and shorten queues, using the existing scale and item database without replacing checkouts.
 \end{otherlanguage}
-\begin{figure}[htbp]
+
+\begin{figure}[h!]
     \centering
-    \includegraphics[width=0.4\textwidth]{stručny_diagram.pdf}
-    \caption{základny diagram}
-    \label{fig:moj_diagram}
-\end{figure}
-\begin{figure}[htbp]
-    \centering
-    \includegraphics[width=0.4\textwidth]{systém.pdf}
-    \caption{podrobnejší diagram}
-    \label{fig:moj_diagram}
+    \begin{subfigure}{0.45\linewidth}
+        \includegraphics[width=\linewidth]{stručny_diagram.pdf}
+        \caption{Prvý UML diagram}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.45\linewidth}
+        \includegraphics[width=\linewidth]{systém.pdf}
+        \caption{Druhý UML diagram}
+    \end{subfigure}
 \end{figure}
 \end{document}
